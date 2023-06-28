@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting-Legends</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-image: url('shooting-leg.webp');
+        margin: 0;
+        overflow: hidden;
+    }
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #dialog {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    #play {
+        border: 2px solid blue;
+        border-radius:10px;
+        padding: 10px 20px;
+    }
+</style>
+<body>
+
+    <canvas id="canvas"></canvas>
+    <div id="overlay">
+        <div id="dialog">
+            <h2>Shooting Legends</h2>
+            <h2>
+                <bold>Score : <span id="scoreValue"></span></bold>
+            </h2>
+            <button id="play">Start</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
